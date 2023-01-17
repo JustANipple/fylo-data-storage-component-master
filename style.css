@@ -1,0 +1,148 @@
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+/* Custom properties */
+:root {
+    --primary-bg-clr: linear-gradient(90deg, rgba(255,163,153,1) 0%, rgba(255,77,151,1) 100%);
+    --neutral-par-clr: hsl(243, 100%, 93%);
+    --neutral-bold-clr: hsl(229, 7%, 55%);
+    --neutral-box-bg-clr: hsl(228, 56%, 26%);
+    --neutral-very-dark-clr: hsl(229, 57%, 11%);
+    --neutral-very-dark-opaque-color: hsla(229, 57%, 11%, 0.5);
+    --main-fs: 14px;
+    --main-ff: 'Raleway', sans-serif;
+    --regular-fw: 400;
+    --bold-fw: 700;
+}
+
+/* Styles */
+
+body {
+    background-image: url(images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    font-family: var(--main-ff);
+    color: var(--neutral-par-clr);
+    font-size: var(--main-fs);
+}
+
+.container {
+    display: grid;
+    gap: 1rem;
+    margin: 1.5rem;
+    /* Change */
+    width: 330px;
+}
+
+.header,
+.storage,
+.freeSpace {
+  border-radius: 0.5rem;
+}
+
+.header,
+.storage {
+    background-color: var(--neutral-box-bg-clr);
+}
+
+.freeSpace {
+  background-color: white;
+}
+
+.header {
+    display: grid;
+    gap: 2.5rem;
+    border-top-right-radius: 6rem;
+    padding: 2.5rem;
+}
+
+.icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.cont {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--neutral-very-dark-clr);
+    border-radius: 0.5rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+.storage {
+  padding: 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.gbUsed {
+  font-weight: var(--bold-fw);
+}
+
+.used {
+  text-align: center;
+}
+
+.barCont {
+  height: 1.17rem;
+  width: 100%;
+  background-color: var(--neutral-very-dark-opaque-color);
+  padding: 0.17rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  width: 75%;
+  background: var(--primary-bg-clr);
+  border-radius: 1rem;
+  display: flex;
+  justify-content: end;
+  overflow: hidden;
+  padding: 0.1rem;
+}
+
+.circle {
+  aspect-ratio: 1/1;
+  height: 100%;
+  background-color: white;
+  border-radius: 1rem;
+}
+
+.gbNums {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gb {
+  font-weight: var(--bold-fw);
+}
