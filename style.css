@@ -56,8 +56,7 @@ body {
     display: grid;
     gap: 1rem;
     margin: 1.5rem;
-    /* Change */
-    width: 330px;
+    min-width: 320px;
 }
 
 .header,
@@ -71,13 +70,9 @@ body {
     background-color: var(--neutral-box-bg-clr);
 }
 
-.freeSpace {
-  background-color: white;
-}
-
 .header {
     display: grid;
-    gap: 2.5rem;
+    gap: 2.3rem;
     border-top-right-radius: 6rem;
     padding: 2.5rem;
 }
@@ -98,7 +93,7 @@ body {
 }
 
 .storage {
-  padding: 2rem;
+  padding: 2rem 2rem 3rem 2rem;
   display: grid;
   gap: 1rem;
 }
@@ -128,14 +123,14 @@ body {
   display: flex;
   justify-content: end;
   overflow: hidden;
-  padding: 0.1rem;
+  padding: 0.12rem;
 }
 
 .circle {
-  aspect-ratio: 1/1;
   height: 100%;
+  width: 0.65rem;
   background-color: white;
-  border-radius: 1rem;
+  border-radius: 50%;
 }
 
 .gbNums {
@@ -145,4 +140,30 @@ body {
 
 .gb {
   font-weight: var(--bold-fw);
+  font-size: 0.8rem;
+  margin-top: -0.5rem;
+}
+
+.freeSpace {
+  background-color: white;
+  font-weight: var(--bold-fw);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  position: relative;
+  bottom: 70%;
+  width: fit-content;
+  margin: auto;
+  padding: 0.3rem 1.3rem;
+}
+
+.gbLeft {
+  color: var(--neutral-very-dark-clr);
+  font-size: 2.5rem;
+}
+
+.spaceLeft {
+  color: var(--neutral-bold-clr);
+  text-transform: uppercase;
 }
