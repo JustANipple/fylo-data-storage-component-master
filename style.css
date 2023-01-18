@@ -180,6 +180,10 @@ body {
     background-size: 100% 50%;
   }
 
+  .header {
+    min-width: 350px;
+  }
+
   .container {
     display: flex;
   }
